@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 nav ul{
     display: flex;
@@ -148,6 +148,7 @@ h2+p {
     padding: 5px 10px;
     left: 10%;
     top: -5%;
+    z-index: 1;
 }
 
 /*  detail page */
@@ -174,6 +175,7 @@ h2+p {
     line-height: 1;
     border-radius: 5%;
     align-content: center;
+    position: relative;
 }
 .detail-menu-grid .menu-card .content {
     display: flex;
@@ -202,9 +204,12 @@ h2+p {
 }
 .hot{
     position: absolute;
-    font-size: 20px;
-    top: 140px;
-    left: 150px;
+    font-size: 30px;
+    bottom: -10px;
+    right: -10px;
+    background-color: rgb(255, 222, 222);
+    padding: 5px 10px 10px;
+    border-radius: 10px;
 }
 
 
@@ -236,7 +241,7 @@ h2+p {
     font-size: 170px;
     border-radius: 100%;
     color: green;
-    margin: auto;
+    position: relative;
 }
 
 .ordered-menu-grid .menu-card .state,
