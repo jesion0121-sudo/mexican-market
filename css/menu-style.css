@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    background-color: #F8FAFC;
+    color: #1F1F2E;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#wrap {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    margin: auto;
+    background-color: white;
+    border-bottom: 1px solid #e2eBf0;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+h1,
+nav ul li {
+    margin: 0;
+    line-height: 1.7;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+main h2 {
+    font-size: 30px;
+}
+
+main h2+p {
+    color: gray;
+}
+
+main h2,
+h2+p {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+.menu-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.menu-grid .menu-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: white;
+    margin-top: 30px;
+    padding: 15px 0;
+    line-height: 1;
+    border: 1px dashed #1F1F2E;
+}
+
+.menu-grid .image {
+    display: block;
+    font-size: 100px;
+    align-content: center;
+    text-align: center;
+    padding: 20px 30px 30px 30px;
+    line-height: 1;
+    border-radius: 5%;
+}
+
+.menu-card:nth-child(1) .image {
+    background-color: rgba(255, 255, 178, 0.397);
+}
+
+.menu-card:nth-child(2) .image {
+    background-color: rgba(255, 215, 178, 0.397);
+}
+
+.menu-card:nth-child(3) .image {
+    background-color: rgba(178, 255, 184, 0.397);
+}
+
+.menu-card:nth-child(4) .image {
+    background-color: rgba(233, 178, 255, 0.397);
+}
+
+.menu-card:nth-child(5) .image {
+    background-color: rgba(178, 255, 242, 0.397);
+}
+
+.menu-card:nth-child(6) .image {
+    background-color: rgba(209, 255, 178, 0.397);
+}
+
+.menu-card:nth-child(7) .image {
+    background-color: rgba(205, 178, 255, 0.397);
+}
+
+.menu-card:nth-child(8) .image {
+    background-color: rgba(178, 202, 255, 0.397);
+}
+
+.menu-card .name,
+.menu-card .price {
+    line-height: 0.3;
+    margin-bottom: 20px;
+}
+
+.menu-card .price {
+    color: rgb(68, 5, 141);
+    font-style: bold;
+}
+
+.menu-grid .menu-card:hover {
+    border: 1px solid rgb(68, 5, 141);
+    background-color: rgba(68, 5, 141, 0.055);
+}
+.badge{
+    position: absolute;
+    background-color: tomato;
+    color: white;
+    padding: 5px 10px;
+    left: 10%;
+    top: -5%;
+}
+
+/*  detail page */
+.detail-menu-grid .menu-card {
+    display: none;
+}
+
+.detail-menu-grid .menu-card:target {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-menu-grid .menu-card {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    line-height: 1;
+}
+
+.detail-menu-grid .image {
+    font-size: 10vw;
+    text-align: center;
+    padding: 70px;
+    line-height: 1;
+    border-radius: 5%;
+    align-content: center;
+}
+.detail-menu-grid .menu-card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: right;
+}
+
+.detail-menu-grid .menu-card .name {
+    font-size: 25px;
+    font-style: bold;
+    line-height: 1;
+}
+
+.detail-menu-grid .menu-card .price {
+    color: rgb(68, 5, 141);
+    font-style: bold;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.back {
+    display: block;
+    margin: 10px;
+}
+.hot{
+    position: absolute;
+    font-size: 20px;
+    top: 140px;
+    left: 150px;
+}
+
+
+/*  ordered page */
+
+.ordered-menu-grid .menu-card {
+    display: none;
+}
+
+.ordered-menu-grid .menu-card:target {
+    display: block;
+}
+
+
+.ordered-menu-grid .menu-card {
+    border-radius: 5%;
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 1;
+}
+
+.ordered-menu-grid .menu-card .image {
+    background: rgb(218, 245, 218);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+    font-size: 170px;
+    border-radius: 100%;
+    color: green;
+    margin: auto;
+}
+
+.ordered-menu-grid .menu-card .state,
+.ordered-menu-grid .menu-card .name,
+.ordered-menu-grid .menu-card .price,
+.ordered-menu-grid .menu-card .detail,
+.order {
+    text-align: center;
+    line-height: 2;
+}
+
+.ordered-menu-grid .menu-card .state {
+    font-size: 30px;
+}
+
+.ordered-menu-grid .menu-card .name {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.ordered-menu-grid .menu-card .price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ordered-menu-grid .menu-card .detail {
+    font-size: 20px;
+}
+
+.order {
+    background-color: plum;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    margin-top: 200px;
+    margin: auto;
+}
+
+.order a {
+    display: block;
+    padding: 10px 40px;
+}
